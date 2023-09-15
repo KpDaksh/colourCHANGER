@@ -1,0 +1,60 @@
+<!-- Doing using Hmtl5 -->
+
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <!-- Creating the nav bar using the images  -->
+        <nav>
+            <ul>
+                <li><img class="img1" src="rocket.png" height="40px" width="40px" ></li> <!--setting img size as per template -->
+                <li><a href="#" onclick="changeBackgroundColor('red')">Red</a></li>  <!--using an anchor tag with onclick event -->
+                <li><a href="#" onclick="changeBackgroundColor('blue')">Blue</a></li><!--also giving them color now-->
+                <li><a href="#" onclick="changeBackgroundColor('green')">Green</a></li>
+                <li><a href="#" onclick="changeBackgroundColor('yellow')">Yellow</a></li>
+                <li><a href="#" onclick="changeBackgroundColor('pink')">Pink</a></li>
+                <li><a href="#" onclick="changeBackgroundColor('purple')">Purple</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- section tag along with text and giving it id so that i can be used later to change it color by using this id -->
+   <section class="about-section" id="about-section">
+        <h1>I 🤍 Color</h1>
+        <p>Color really isn't that difficult to get right if you know where to start.</p>
+        <p>Learn by doing and you'll be a master in no time.</p>
+        <button>Over to you</button> <!-- this is does not occur any event -->
+    </section>
+    <div class="card-container">
+    <div class="card">
+        <img src="blue.png" height="30%" width="40%">
+        <h2>Blue</h2>
+        <p>Blue is the color of the sky and sea. It is often associated with depth and stability. It symbolizes trust, loyalty, wisdom, confidence, intelligence, faith, truth, and heaven.</p>
+    </div>
+    <div class="card">
+        <img src="green.png" height="30%" width="40%">
+        <h2>Green</h2>
+        <p>Green is the color of nature. It symbolizes growth, harmony, freshness, and fertility. Green has a strong emotional correspondence with safety.</p>
+    </div>
+    <div class="card">
+        <img src="red.jpg" height="30%" width="40%">
+        <h2>Red</h2>
+        <p>Red is the color of fire and blood, so it is associated with energy, war, danger, strength, power, determination as well as passion, desire, and love.</p>
+    </div>
+</div>
+
+<script>
+// using js here because it's just two line code
+function changeBackgroundColor(color) {
+        document.getElementById('about-section').style.backgroundColor = color;
+    // this code change the background color of an HTML element with the ID "about-section" to the provided color.
+    }
+</script>
+</body>
+</html>
